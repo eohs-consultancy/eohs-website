@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EOHS Consultancy Services – Our Expertise</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('ppe-banner.png') no-repeat center center fixed;
+      background-size: cover;
+      background-blend-mode: lighten;
+      color: #333;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.85);
+      z-index: -1;
+    }
+
+    .header-content {
+      background-color: #fff;
+      padding: 30px 40px;
+      border-bottom: 4px solid #ff6600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 100px;
+      margin-right: 20px;
+    }
+
+    .logo-text {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .tagline {
+      font-size: 1rem;
+      font-style: italic;
+      color: #666;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: flex-start;
+      position: relative;
+    }
+
+    .menu-container {
+      position: relative;
+    }
+
+    .menu-button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .menu-button:hover {
+      background-color: #ff6600;
+    }
+
+    .menu-dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      z-index: 1000;
+      min-width: 160px;
+    }
+
+    .menu-dropdown a {
+      display: block;
+      padding: 12px 16px;
+      color: #333;
+      text-decoration: none;
+      border-bottom: 1px solid #eee;
+    }
+
+    .menu-dropdown a:hover {
+      background-color: #ff6600;
+      color: #fff;
+    }
+
+    .menu-container:hover .menu-dropdown {
+      display: block;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .service-card {
+      background-color: #fff;
+      border-left: 6px solid #ff6600;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card h3 {
+      margin-top: 0;
+      color: #333;
+      font-size: 1.3rem;
+    }
+
+    .service-card p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #ff6600;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header-content">
+    <div class="logo">
+      <img src="logo.png" alt="EOHS Logo" />
+      <div class="logo-text">EOHS Consultancy Services</div>
+    </div>
+    <div class="tagline">Environmental & Occupational Health Solutions</div>
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="menu-container">
+      <button class="menu-button">Menu ▾</button>
+      <div class="menu-dropdown">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <section class="section">
+      <h2>Our Expertise</h2>
+      <p>
+        At EOHS Consultancy, we deliver precision-driven services that align with regulatory frameworks, stakeholder expectations, and your organization’s long-term safety goals. Each offering is designed to elevate operational integrity and build trust across every touchpoint.
+      </p>
+    </section>
+
+    <section class="service-grid">
+      <div class="service-card">
+        <h3>Environmental Compliance Audits</h3>
+        <p>Comprehensive assessments to ensure adherence to environmental regulations, minimize risk, and support sustainable operations.</p>
+      </div>
+      <div class="service-card">
+        <h3>Occupational Health Strategy</h3>
+        <p>Tailored programs that promote employee well-being, reduce absenteeism, and align with ISO and OSHA standards.</p>
+      </div>
+      <div class="service-card">
+        <h3>Workplace Safety Design</h3>
+        <p>From PPE protocols to hazard mapping, we engineer safety into the fabric of your operations with precision and foresight.</p>
+      </div>
+      <div class="service-card">
+        <h3>Incident Investigation & Reporting</h3>
+        <p>Root cause analysis and transparent documentation that drive accountability and continuous improvement.</p>
+      </div>
+      <div class="service-card">
+        <h3>Training & Capacity Building</h3>
+        <p>Interactive workshops and e-learning modules that empower teams with actionable knowledge and safety culture reinforcement.</p>
+      </div>
+      <div class="service-card">
+        <h3>Digital Dashboard Integration</h3>
+        <p>Custom interfaces that visualize compliance metrics, risk profiles, and performance indicators in real time.</p>
+      </div>
+    </section>
+
+    <a href="contact.html" class="cta-button">Request a Consultation</a>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 EOHS Consultancy Services. All rights reserved.
+  </footer>
+
+</body>
+</html>
